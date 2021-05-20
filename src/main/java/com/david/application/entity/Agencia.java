@@ -25,7 +25,3 @@ public class Agencia {
     @Column(name="AG_Direccion", length = 50)
     private String address;
 }
-
-    /*create database agency;
-    mysql> create user 'admin'@'%' identified by 'strongerPassword123';
-    mysql> grant all on agency.* to 'admin'@'%';*/
