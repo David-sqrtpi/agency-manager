@@ -20,10 +20,10 @@ public class Empleabilidad {
     @Column(name="Id", length = 11)
     private int id;
     @ManyToOne
-    @Column(name="IdAspirante", length = 11, columnDefinition = "integer")
+    @JoinColumn(name="IdAspirante", columnDefinition = "integer(11)")
     private Aspirante aspirante;
     @ManyToOne
-    @Column(name="IdOferta", length = 11, columnDefinition = "integer")
+    @JoinColumn(name="IdOferta", columnDefinition = "integer(11)")
     private Oferta oferta;
     @Column(name = "eFecha")
     private Date date;

@@ -25,9 +25,9 @@ public class Aspirante {
     @Column(name="AS_Genero", length = 1)
     private int gender;
     @ManyToOne
-    @Column(name="IdProfesion", length = 11, columnDefinition = "integer")
+    @JoinColumn(name="IdProfesion", columnDefinition = "integer(11)")
     private Profesion profesion;
     @ManyToOne
-    @Column(name="IdAgencia", length = 11, columnDefinition = "integer")
+    @JoinColumn(name="IdAgencia", columnDefinition = "integer(11)")
     private Agencia agencia;
 }

@@ -27,5 +27,5 @@ public class Agencia {
 }
 
     /*create database agency;
-    mysql> create user 'root'@'%' identified by 'strongerPassword123';
-    mysql> grant all on agency.* to 'root'@'%';*/
+    mysql> create user 'admin'@'%' identified by 'strongerPassword123';
+    mysql> grant all on agency.* to 'admin'@'%';*/
