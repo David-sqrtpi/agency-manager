@@ -23,7 +23,7 @@ public class Aspirante {
     @Column(name="AS_Edad", length = 2)
     private int age;
     @Column(name="AS_Genero", length = 1)
-    private int gender;
+    private char gender;
     @ManyToOne
     @JoinColumn(name="IdProfesion", columnDefinition = "integer(11)")
     private Profesion profesion;

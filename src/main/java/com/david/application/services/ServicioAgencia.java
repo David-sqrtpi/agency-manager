@@ -10,6 +10,7 @@ public class ServicioAgencia {
     @Autowired
     private RepositorioAgencia repositorioAgencia;
 
+    //RF1
     public void initializeAgencyValues(Agencia agencia) {
         repositorioAgencia.save(agencia);
     }

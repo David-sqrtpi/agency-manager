@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface RepositorioAspirante extends JpaRepository<Aspirante, Integer> {
     List<Aspirante> findByNameLike(String pattern);
+    List<Aspirante> findByGenderAndProfesionId(char gender, int profesionId);
 }

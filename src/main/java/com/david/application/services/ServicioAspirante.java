@@ -13,7 +13,7 @@ public class ServicioAspirante {
     private RepositorioAspirante repositorioAspirante;
 
     //RF2
-    public void addCandidate(Aspirante aspirante) {
+    public void create(Aspirante aspirante) {
         try {
             repositorioAspirante.save(aspirante);
         } catch (Exception e) {
@@ -23,12 +23,12 @@ public class ServicioAspirante {
 
     //RF3
     public List<Aspirante> filterByFirstNameLetter(char letter) {
-        return repositorioAspirante.findByNameLike(letter+"%");
+        return repositorioAspirante.findByNameLike(letter+"%".toLowerCase());
     }
 
     //RF4
-    public List<Aspirante> filterByGenderAndProfession(String gender, String profession) {
-        return null;
+    public List<Aspirante> filterByGenderAndProfession(char gender, int professionId) {
+        return repositorioAspirante.findByGenderAndProfesionId(gender, professionId);
     }
 
     //RF5
